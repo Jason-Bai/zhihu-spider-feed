@@ -1,10 +1,8 @@
 const UserFeed = require('../feeds/user');
 const users = require('../mock/users');
 
-UserFeed.profile('zhang-jia-wei').then((userInfos) => {
-  console.log('Success : ', userInfos.length);
-  const [ first ] = userInfos;
-  console.log(first);
+UserFeed.sync('feifeimao').then((res) => {
+  console.log('Success : ', res);
 }).catch((err) => {
   console.log('Error : ', err);
 });

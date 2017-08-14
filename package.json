@@ -4,12 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "NODE_ENV=development node index.js",
+    "lint": "eslint ./**.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
+    "lodash": "^4.17.4",
+    "mysql2": "^1.4.0",
+    "redis": "^2.8.0",
     "zhihu-api": "^2.4.3"
+  },
+	"devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.10.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
   }
 }

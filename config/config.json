@@ -1,0 +1,39 @@
+{
+  "development": {
+		"db": {
+      "dialect": "mysql",
+			"host": "127.0.0.1",
+			"port": 3306,
+			"database": "zhihu_feed",
+		  "user": "root",
+		  "password": "rootrootroot"
+		},
+    "redis": {
+      "host": "127.0.0.1",
+      "port": 6379
+    },
+		"port": 8000
+  },
+  "test": {
+		"db": {
+      "dialect": "mysql",
+			"host": "127.0.0.1",
+			"port": 3306,
+			"database": "zhihu_feed",
+		  "user": "root",
+		  "password": "root"
+		},
+		"port": 8000
+  },
+  "production": {
+		"db": {
+      "dialect": "mysql",
+			"host": "127.0.0.1",
+			"port": 3306,
+			"database": "zhihu_feed",
+		  "user": "root",
+		  "password": "root"
+		},
+		"port": 8000
+  }
+}
